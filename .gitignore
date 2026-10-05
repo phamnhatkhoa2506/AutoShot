@@ -1,0 +1,14 @@
+node_modules/
+autoshot-output/
+output/
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+*.user
+*.tmp
+*.tmp.mjs

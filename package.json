@@ -1,0 +1,45 @@
+{
+  "name": "autoshot-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that lets coding agents (Claude Code, Codex, OpenCode, Cursor, ...) run commands in real terminal windows, capture precisely cropped screenshot evidence and assemble it into reports.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "autoshot-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "native",
+    "integrations",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "doctor": "node src/index.js --doctor",
+    "test": "node --test \"test/*.test.js\"",
+    "e2e": "node test/e2e.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "screenshot",
+    "terminal",
+    "evidence",
+    "report",
+    "claude-code",
+    "codex",
+    "opencode"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "docx": "^9.8.1",
+    "jszip": "^3.10.2",
+    "zod": "^4.6.5"
+  }
+}
